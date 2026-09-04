@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form</title>
+
+    <style>
+      body {
+        background-color: rgb(138, 150, 162);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+      }
+      label {
+        font-weight: 700;
+      }
+
+      input {
+        background-color: white;
+        border: 1px solid black;
+        border-radius: 10px;
+      }
+      select {
+        border-radius: 10px;
+        color: white;
+        background-color: rgb(138, 150, 162);
+      }
+      button {
+        background-color: pink;
+        border-radius: 10px;
+      }
+      .card {
+        border: 3px solid slategray;
+        border-radius: 10px;
+        width: 700px;
+        height: 800px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: slategray;
+      }
+      .form {
+        font-weight: bold;
+        text-align: center;
+        font-size: 30px;
+      }
+      .size {
+        height: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <form method="get">
+        <div class="form">FORM</div>
+        <br />
+        <div>
+          <label for="Name">Name</label><br />
+          <input
+            class="size"
+            id="Name"
+            type="text"
+            placeholder="Enter your name"
+            name="Enter your name"
+            required
+          /><br />
+          <br />
+          <label for="Surname">Surname</label><br />
+          <input
+            class="size"
+            id="Surmame"
+            type="text"
+            placeholder="Enter your surname"
+            name="Surname"
+            required
+          /><br />
+          <br />
+          <label for="Email">Email</label><br />
+          <input
+            class="size"
+            id="Email"
+            type="text"
+            placeholder="Email"
+            name="Email"
+            required
+          /><br />
+          <br />
+          <label for="Age">Age</label><br />
+          <input
+            class="size"
+            id="Age"
+            type="text"
+            placeholder="Age"
+            name="Age"
+          /><br />
+          <br />
+          <br />
+          <label for="">How often do you visit the library?</label><br />
+          <select name="job" id="">
+            <option value="" disabled selected>Select</option>
+            <option value="Every day">Every day</option>
+            <option value="Sometimes">Some times</option>
+            <option value="Never">Never</option>
+          </select>
+          <br />
+          <br />
+          <div>
+            When you visit,are you usually able to find what you are looking
+            for?
+          </div>
+          <input type="radio" name="visit" value="Always" /><span>Always</span
+          ><br />
+          <input type="radio" name="visit" value="Sometimes" /><span
+            >Sometimes</span
+          ><br />
+          <input type="radio" name="visit" value="Rarely" /><span>Rarely</span
+          ><br />
+          <input type="radio" name="visit" value="Never" /><span>Never</span
+          ><br />
+          <br />
+
+          <div>
+            Do you usually find the books and other materials that you are
+            looking for in the library?
+          </div>
+          <input type="radio" name="books" value="Always" /><span>Always</span
+          ><br />
+          <input type="radio" name="books" value="Sometimes" /><span
+            >Sometimes</span
+          ><br />
+          <input type="radio" name="books" value="Rarely" /><span>Rarely</span
+          ><br />
+          <input type="radio" name="books" value="Never" /><span>Never</span
+          ><br />
+          <br />
+          <div>
+            Please chek all of the reasons you visit the library.(Check all that
+            apply)
+          </div>
+          <span>to check out</span>
+          <input type="checkbox" name="reason" value="to check out" /><br />
+          <span>to do research</span>
+          <input type="checkbox" name="reason" value="to do research" /><br />
+          <span>to take class</span>
+          <input type="checkbox" name="reason" value="to take class" /><br />
+          <br />
+          <button type="submit">Sumbit</button>
+          <button type="reset">Reset</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
